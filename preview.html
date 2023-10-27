@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Abinandh MJ">
+    <meta name="description" content="Musify is a digital music service that gives you access to millions of songs.">
+    <meta property="og:site_name" content="Musify">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="preview.css" />
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Musify - Online Music Player</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <div id="first-nav">
+                    <li><a href="#" class="logo-txt"><img class="sangg" src="./assets/images/mainlogo.png" width="100"
+                                id="logo-head"></a></li>
+                    <li>
+                        <p>
+                            <a href="#" id="favorites">Favorites</a>
+                        </p>
+                    </li>
+                </div>
+                <div id="second-nav">
+                    <span id="search-bar"> <i class="fa-solid fa-magnifying-glass"></i> <input type="text" name="search"
+                            placeholder="search"><i class="fa-solid fa-microphone"></i></span>
+                    <a href="#"><i class="fa-solid fa-bell"></i><span id="notification">1</span></i></a>
+                    <li id="second-img"><a href="#"><img id="user-head" src="./assets/images/user-headshot.jpeg"
+                                height="40" width="40"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navbar End -->
+    <main>
+        <!-- Album Banner -->
+        <section id="album-banner">
+            <div class="poster">
+                <img src="./assets/images/album/album-banner.jpeg" alt="">
+            </div>
+            <div class="album-details">
+                <sub>Album</sub>
+                <h1>Leo (Original Motion Picture Soundtrack)</h1>
+                <div class="artisst-credits">
+                    <img class="artist-profile" src="./assets/images/album/anirudh.jpeg" height="24" width="24"
+                        alt="Anirudh Ravichander">
+                    <P>Anirudh Ravichander</P>
+                    <span>2023</span>
+                    <span>7 songs, 17 min 37 sec</span>
+                </div>
+            </div>
+        </section>
+        <!-- Album Banner End -->
+
+        <!-- Album Play action bar -->
+        <section id="album-play">
+            <div class="play-icons">
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </section>
+        <!-- Album Play action bar End -->
+    </main>
+    <!-- Side bar -->
+    <aside>
+        <div>
+            <div id="main-sidebar-heading">
+                <h3 class="sidebar-topic">Up Next </h3>
+            </div>
+            <details class="dropdown">
+                <summary role="button">
+                    <a class="button">Queue </a>
+                </summary>
+                <ul>
+                    <li><a href="#">Liked Songs</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Artist</a></li>
+                    <li><a href="#">Your Library</a></li>
+                </ul>
+            </details>
+        </div>
+
+        <div id="sidebar-player">
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play animate-sidebar-play"><span class="sidebar-song-no">01</span><img
+                        src="./assets/images/queue/chasingcars.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Chasing Cars<br>
+                        <span class="sidebar-artist">Snow Patrol</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">02</span><img
+                        src="./assets/images/queue/radioactive.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Radioactive<br>
+                        <span class="sidebar-artist">Imagine Drangons</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">03</span><img
+                        src="./assets/images/queue/halo.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Halo<br>
+                        <span class="sidebar-artist">Beyoncé</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">04</span><img
+                        src="./assets/images/songs/heymama.jpg" height="40" width="40">
+                    <p class="sidebar-heading">Hey Mama <br>
+                        <span class="sidebar-artist">David Guetta, Bebe Rexha</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">05</span><img
+                        src="./assets/images/songs/oombalum kanjiyum.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Oombalum Kanjiyum<br>
+                        <span class="sidebar-artist">Malayali Monkeys</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">06</span><img
+                        src="./assets/images/songs/kalapakara.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Kalapakara (King of Kotha)<br>
+                        <span class="sidebar-artist">Jakes Bejoy, Shreya Ghoshal</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">07</span><img
+                        src="./assets/images/songs/scenemone.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Scene Mone (RDX)<br>
+                        <span class="sidebar-artist">NJ, Rzee</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">08</span><img
+                        src="./assets/images/songs/ellamekonjamkaalam.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Ellame Konjam Kaalam (Naa Oru Alien)<br>
+                        <span class="sidebar-artist">Hiphop Tamizha</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">09</span><img
+                        src="./assets/images/songs/naready.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Naa Ready (Leo)<br>
+                        <span class="sidebar-artist">Thalapathy Vijay, Asal Kolaar</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">10</span><img
+                        src="./assets/images/songs/rapgod.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Rap God
+                        <span class="sidebar-artist">Eminem</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play animate-sidebar-play"><span class="sidebar-song-no">11</span><img
+                        src="./assets/images/queue/chasingcars.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Chasing Cars<br>
+                        <span class="sidebar-artist">Snow Patrol</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">12</span><img
+                        src="./assets/images/queue/radioactive.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Radioactive<br>
+                        <span class="sidebar-artist">Imagine Drangons</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">13</span><img
+                        src="./assets/images/queue/halo.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Halo<br>
+                        <span class="sidebar-artist">Beyoncé</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">14</span><img
+                        src="./assets/images/songs/heymama.jpg" height="40" width="40">
+                    <p class="sidebar-heading">Hey Mama (feat. Nicki Minaj, Bebe Rexha & Afrojack)<br>
+                        <span class="sidebar-artist">David Guetta, Bebe Rexha</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">15</span><img
+                        src="./assets/images/songs/oombalum kanjiyum.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Oombalum Kanjiyum<br>
+                        <span class="sidebar-artist">Malayali Monkeys</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">16</span><img
+                        src="./assets/images/songs/kalapakara.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Kalapakara (King of Kotha)<br>
+                        <span class="sidebar-artist">Jakes Bejoy, Shreya Ghoshal</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">17</span><img
+                        src="./assets/images/songs/scenemone.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Scene Mone (RDX)<br>
+                        <span class="sidebar-artist">NJ, Rzee</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">18</span><img
+                        src="./assets/images/songs/ellamekonjamkaalam.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Ellame Konjam Kaalam (Naa Oru Alien)<br>
+                        <span class="sidebar-artist">Hiphop Tamizha</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">19</span><img
+                        src="./assets/images/songs/naready.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Naa Ready (Leo)<br>
+                        <span class="sidebar-artist">Thalapathy Vijay, Asal Kolaar</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">20</span><img
+                        src="./assets/images/songs/rapgod.jpeg" height="40" width="40">
+                    <p class="sidebar-heading">Rap God
+                        <span class="sidebar-artist">Eminem</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+        </div>
+    </aside>
+    <!-- Side bar End -->
+    <!-- Playlist -->
+    <section id="playlists">
+        <div class="playlist-heading">
+            <p># Title</p>
+            <p><i class="far fa-clock"></i></p>
+        </div>
+        <table id="listplay">
+            <tr class="nowplaying">
+                <td class="no">1</td>
+                <td class="track" colspan="10"><img src="./assets/images/album/bloodysweet.jpeg" width="60"
+                        height="60"><span class="tracka"><span>Bloody Sweet (From "Leo")</span><br><span
+                            class="artist-name">Anirudh
+                            Ravichander</span></span></td>
+                <td class="album">2:48</td>
+            </tr>
+            <tr class="upcoming">
+                <td class="no">2</td>
+                <td class="track" colspan="10"><img src="./assets/images/songs/naready.jpeg" width="60"
+                        height="60"><span class="tracka"><span>Naa Ready (From "Leo")</span><br><span
+                            class="artist-name">Thalapathy Vijay, Asal Kolaar, Anirudh
+                            Ravichander</span></span></td>
+                <td class="album">4:08</td>
+            </tr>
+            <tr class="upcoming">
+                <td class="no">3</td>
+                <td class="track" colspan="10"><img src="./assets/images/recently-played/ordinary person.jpeg"
+                        width="60" height="60"><span class="tracka"><span>Ordinary Person (From "Leo")</span><br><span
+                            class="artist-name">Anirudh
+                            Ravichander, Nikhita Gandhi</span></span></td>
+                <td class="album">2:19</td>
+            </tr>
+            <tr class="upcoming">
+                <td class="no">4</td>
+                <td class="track" colspan="10"><img src="./assets/images/album/anbenum.jpeg" width="60"
+                        height="60"><span class="tracka"><span>Anbenum (From "Leo")</span><br><span
+                            class="artist-name">Anirudh
+                            Ravichander, Lothika</span></span></td>
+                <td class="album">3:34</td>
+            </tr>
+            <tr class="upcoming">
+                <td class="no">5</td>
+                <td class="track" colspan="10"><img src="./assets/images/album/badass.jpeg" width="60" height="60"><span
+                        class="tracka"><span>Badass (From "Leo")</span><br><span class="artist-name">Anirudh
+                            Ravichander</span></span></td>
+                <td class="album">3:49</td>
+            </tr>
+            <tr class="upcoming">
+                <td class="no">6</td>
+                <td class="track" colspan="10"><img src="./assets/images/album/gimplseofharolddas.jpeg" width="60"
+                        height="60"><span class="tracka"><span>Glimpse of Harold Das (From "Leo")</span><br><span
+                            class="artist-name">Anirudh
+                            Ravichander</span></span></td>
+                <td class="album">0:42</td>
+            </tr>
+            <tr class="upcoming">
+                <td class="no">7</td>
+                <td class="track" colspan="10"><img src="./assets/images/album/album-banner.jpeg" width="60"
+                        height="60"><span class="tracka"><span>Lokiverse 2.0</span><br><span class="artist-name">Anirudh
+                            Ravichander</span></span></td>
+                <td class="album">1:54</td>
+            </tr>
+            <tr class="upcoming">
+                <td class="no">8</td>
+                <td class="track" colspan="10"><img src="./assets/images/album/villanyaaru.jpeg" width="60"
+                        height="60"><span class="tracka"><span>Villan Yaaru (From "Leo")</span><br><span
+                            class="artist-name">Anirudh
+                            Ravichander, Shakthisree Gopalan</span></span></td>
+                <td class="album">3:05</td>
+            </tr>
+        </table>
+        <div class="album-copyrights">
+            <small>October 19, 2023<br>
+                ℗ 2023 Sony Music Entertainment India Pvt. Ltd.</small>
+        </div>
+    </section>
+    <!-- Playlist End -->
+    <!-- More by Anirudh Ravichander -->
+    <section id="recently-played">
+        <div class="player-title">
+            <h2 class="box-heading">More by Anirudh Ravichander</h2>
+            <P><a href="#">Show all</a></P>
+        </div>
+        <div class=" recommended-container">
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/album/chaleya.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5>Chaleya</h5>
+                    <small class="sub">Anirudh Ravichander</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/album/hukum.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5>Hukum - Thalaivar Alappara</h5>
+                    <small class="sub">Anirudh Ravichander</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/album/beastmode.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5>Beast Mode</h5>
+                    <small class="sub">Anirudh Ravichander</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/album/dippamdappam.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5>Dippam Dappam</h5>
+                    <small class="sub">Anirudh Ravichander</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/album/kanavekanave.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5>Kanave Kanave</h5>
+                    <small class="sub">Anirudh Ravichander</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/album/vip.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5>Udhungada Sangu</h5>
+                    <small class="sub">Anirudh Ravichander</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/album/mastertheblaster.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5>Master the Blaster</h5>
+                    <small class="sub">Anirudh Ravichander</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More by Anirudh Ravichander -->
+    <!-- Fixed Play bar -->
+
+    <section id="fixed-playbar">
+        <div class="column track-details">
+            <img id="song-poster" src="./assets/images/recently-played/ordinary person.jpeg" height="80" width="80">
+            <div class="song-info">
+                <h3>Ordinary Person (from "Leo")<br><span>Anirudh Ravichander, Nikhita Gandhi</span></h3>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="column">
+            <div id="progress-controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-step-forward"></i>
+                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                    class="Svg-sc-ytk21e-0 kPpCsU">
+                    <path
+                        d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z">
+                    </path>
+                </svg>
+            </div>
+            <div id="progress-bar">
+
+                <span id="audio-controls">
+
+                    <div class="progress-bar">
+                        <span id="start_num">0.55</span>
+                        <input type="range" min="1" max="200" value="90" id="play-bar">
+                        <span id="end_num">2.19</span>
+
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <div class="column connectivity">
+            <div class="accessibiltiy-section">
+                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                    class="Svg-sc-ytk21e-0 kPpCsU">
+                    <path d="M11.196 8 6 5v6l5.196-3z"></path>
+                    <path
+                        d="M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z">
+                    </path>
+                </svg>
+                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                    class="Svg-sc-ytk21e-0 kPpCsU">
+                    <path
+                        d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z">
+                    </path>
+                </svg>
+                <svg data-encore-id="icon" role="presentation" aria-hidden="true" class="Svg-sc-ytk21e-0 kPpCsU"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25V2.75zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25h-6.5zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5H1.75zM4 15H2v-1.5h2V15z">
+                    </path>
+                    <path d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                </svg>
+                <i class="fa-solid fa-volume-low"></i>
+                <div class="volume-bar">
+                    <span id="volume">
+                        <div id="vol">
+                            <input type="range" min="1" max="20" value="5" id="audio-bar">
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fixed Playbar End -->
+    <!-- Footer -->
+    <footer>
+        <div class="credits-column">
+            <ul class="credits">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
+
+            <p class="copyright">
+                &copy; 2023 Musify
+            </p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>

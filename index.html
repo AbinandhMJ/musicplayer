@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Abinandh MJ">
+    <meta name="description" content="Musify is a digital music service that gives you access to millions of songs.">
+    <meta property="og:site_name" content="Musify">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Musify - Online Music Player</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <div id="first-nav">
+                    <li><a href="#" class="logo-txt"><img class="sangg" src="./assets/images/mainlogo.png" width="100"
+                                id="logo-head"></a></li>
+                    <li>
+                        <p><a href="#" id="favorites">Favorites <i class="fa-solid fa-star"></i></a></p>
+                    </li>
+                </div>
+                <div id="second-nav">
+                    <span id="search-bar"> <i class="fa-solid fa-magnifying-glass"></i> <input type="text" name="search"
+                            placeholder="search"><i class="fa-solid fa-microphone"></i></span>
+                    <a href="#"><i class="fa-solid fa-bell"></i><span id="notification">1</span></i></a>
+                    <li id="second-img"><a href="#"><img id="user-head" src="./assets/images/user-headshot.jpeg"
+                                height="40" width="40"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navbar End -->
+
+    <!-- Main -->
+    <main>
+        <!-- Home Carousel -->
+        <section id="home-carousel">
+            <div class="container">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1" id="song-1">
+                        <img src="./assets/images/carousel/marakkuma nenjam.jpg" alt="song">
+                    </label>
+                    <label class="card" for="item-2" id="song-2">
+                        <img src="./assets/images/carousel/vijayantonyconcert.jpg" alt="song">
+                    </label>
+                    <label class="card" for="item-3" id="song-3">
+                        <img src="./assets/images/carousel/yuvanconcert.jpg" alt="song">
+                    </label>
+                </div>
+            </div>
+        </section>
+        <!-- Home Carousel End -->
+
+        <!-- Recently Played -->
+        <section id="recently-played">
+            <div class="player-title">
+                <h2 class="box-heading">Recently-played</h2>
+                <P><a href="#">Show all</a></P>
+            </div>
+            <div class="welcome-container">
+                <div class="welcome-column">
+                    <div class="card">
+                        <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                        <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                        <img src="./assets/images/recently-played/ordinary person.jpeg" alt="Image 5">
+                        <i class="fa-solid fa-circle-play"><a href="preview.html"></a></i>
+                        <i class="fa-solid fa-circle-pause"></i>
+                        <a href="preview.html">
+                            <h5>Ordinary Person</h5>
+                        </a>
+                        <small>Anirudh Ravichander, <br> Nikhita Gandhi</small>
+                    </div>
+                </div>
+                <div class="welcome-column">
+                    <div class="card">
+                        <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                        <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                        <img src="./assets/images/songs/beepsong.jpeg" alt="Image 5">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-solid fa-circle-pause"></i>
+                        <a href="preview.html">
+                            <h5>#Beep Song</h5>
+                        </a>
+                        <small>Anirudh Ravichander, <br> Silambarasan</small>
+                    </div>
+                </div>
+                <div class="welcome-column">
+                    <div class="card">
+                        <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                        <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                        <img src="./assets/images/songs/maarathey.jpeg" alt="Image 5">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-solid fa-circle-pause"></i>
+                        <a href="preview.html">
+                            <h5>Maarathey</h5>
+                        </a>
+                        <small>Mc Nandh, <br> Vikneshvar</small>
+                    </div>
+                </div>
+                <div class="welcome-column">
+                    <div class="card">
+                        <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                        <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                        <img src="./assets/images/songs/despacito.jpeg" alt="Image 5">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-solid fa-circle-pause"></i>
+                        <a href="preview.html">
+                            <h5>Despactio</h5>
+                        </a>
+                        <small>Louis Fonsi, <br> Daddy Yankee</small>
+                    </div>
+                </div>
+                <div class="welcome-column">
+                    <div class="card">
+                        <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                        <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                        <img src="./assets/images/songs/maybemysoulmatedied.jpg" alt="Image 5">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-solid fa-circle-pause"></i>
+                        <a href="preview.html">
+                            <h5>Maybe My Soulmate Died</h5>
+                        </a>
+                        <small>iamnotshane</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Recently Played End -->
+    <!-- Main End -->
+
+    <!-- Side bar -->
+    <aside>
+        <div>
+            <div id="main-sidebar-heading">
+                <h3 class="sidebar-topic">Queue </h3>
+            </div>
+            <details class="dropdown">
+                <summary role="button">
+                    <a class="button">Queue </a>
+                </summary>
+                <ul>
+                    <li><a href="#">Liked Songs</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Artist</a></li>
+                    <li><a href="#">Your Library</a></li>
+                </ul>
+            </details>
+        </div>
+
+        <div id="sidebar-player">
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play animate-sidebar-play"><span class="sidebar-song-no">01</span><img
+                        src="./assets/images/queue/chasingcars.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"> <a href="preview.html">Chasing Cars</a><br>
+                        <span class="sidebar-artist">Snow Patrol</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">02</span><img
+                        src="./assets/images/queue/radioactive.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Radioactive</a><br>
+                        <span class="sidebar-artist">Imagine Drangons</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">03</span><img
+                        src="./assets/images/queue/halo.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Halo</a><br>
+                        <span class="sidebar-artist">Beyoncé</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">04</span><img
+                        src="./assets/images/songs/heymama.jpg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Hey Mama</a> <br>
+                        <span class="sidebar-artist">David Guetta, Bebe Rexha</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">05</span><img
+                        src="./assets/images/songs/oombalum kanjiyum.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Oombalum Kanjiyum</a><br>
+                        <span class="sidebar-artist">Malayali Monkeys</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">06</span><img
+                        src="./assets/images/songs/kalapakara.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Kalapakara ("King of Kotha")</a><br>
+                        <span class="sidebar-artist">Jakes Bejoy, Shreya Ghoshal</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">07</span><img
+                        src="./assets/images/songs/scenemone.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Scene Mone ("RDX")</a><br>
+                        <span class="sidebar-artist">NJ, Rzee</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">08</span><img
+                        src="./assets/images/songs/ellamekonjamkaalam.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Ellame Konjam Kaalam ("Naa Oru Alien")</a><br>
+                        <span class="sidebar-artist">Hiphop Tamizha</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">09</span><img
+                        src="./assets/images/songs/naready.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Naa Ready ("Leo")</a><br>
+                        <span class="sidebar-artist">Thalapathy Vijay, Asal Kolaar</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">10</span><img
+                        src="./assets/images/songs/rapgod.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Rap God</a>
+                        <span class="sidebar-artist">Eminem</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play animate-sidebar-play"><span class="sidebar-song-no">11</span><img
+                        src="./assets/images/queue/chasingcars.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Chasing Cars</a><br>
+                        <span class="sidebar-artist">Snow Patrol</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">12</span><img
+                        src="./assets/images/queue/radioactive.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Radioactive</a><br>
+                        <span class="sidebar-artist">Imagine Drangons</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">13</span><img
+                        src="./assets/images/queue/halo.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Halo</a><br>
+                        <span class="sidebar-artist">Beyoncé</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">14</span><img
+                        src="./assets/images/songs/heymama.jpg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Hey Mama </a>(feat. Nicki Minaj, Bebe Rexha &
+                        Afrojack)<br>
+                        <span class="sidebar-artist">David Guetta, Bebe Rexha</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">15</span><img
+                        src="./assets/images/songs/oombalum kanjiyum.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Oombalum Kanjiyum</a><br>
+                        <span class="sidebar-artist">Malayali Monkeys</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">16</span><img
+                        src="./assets/images/songs/kalapakara.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Kalapakara ("King of Kotha")</a><br>
+                        <span class="sidebar-artist">Jakes Bejoy, Shreya Ghoshal</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">17</span><img
+                        src="./assets/images/songs/scenemone.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Scene Mone ("RDX")</a><br>
+                        <span class="sidebar-artist">NJ, Rzee</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">18</span><img
+                        src="./assets/images/songs/ellamekonjamkaalam.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Ellame Konjam Kaalam ("Naa Oru Alien")</a><br>
+                        <span class="sidebar-artist">Hiphop Tamizha</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">19</span><img
+                        src="./assets/images/songs/naready.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Naa Ready ("Leo")</a><br>
+                        <span class="sidebar-artist">Thalapathy Vijay, Asal Kolaar</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+            <div class="sideplayer-card">
+                <i class="fa-solid fa-music"></i>
+                <span class="sidebar-play"><span class="sidebar-song-no">20</span><img
+                        src="./assets/images/songs/rapgod.jpeg" height="40" width="40">
+                    <p class="sidebar-heading"><a href="preview.html">Rap God</a>
+                        <span class="sidebar-artist">Eminem</span>
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </div>
+        </div>
+    </aside>
+    <!-- Side bar End -->
+
+    <!-- Recommended for today -->
+    <section id="recently-played">
+        <div class="player-title">
+            <h2 class="box-heading">Recommended for today</h2>
+            <P><a href="preview.html">Show all</a></P>
+        </div>
+        <div class=" recommended-container">
+            <div class="welcome-column">
+                <div class="card">
+                    <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                    <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                    <img src="./assets/images/songs/enrantakonjamkelu.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">En Ranta Konjam Kelu</a></h5>
+                    <small>Vaisagh</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                    <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                    <img src="./assets/images/songs/ninaiviruka.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Ninaiviruka</a></h5>
+                    <small>A.R. Rahman, <br> A.R. Ameen</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                    <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                    <img src="./assets/images/songs/nokki nokki.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Nokki Nokki</a></h5>
+                    <small>Abhay Jodhpurkar, <br> Vidyasagar</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                <div class="card">
+                    <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                    <img src="./assets/images/songs/naready.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Naa Ready</a></h5>
+                    <small>Thalapathy Vijay, <br> Asal Kolaar</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                    <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                    <img src="./assets/images/songs/yanji.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Yanji</a></h5>
+                    <small>Sam C.S, <br> Anirudh Ravichander</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                    <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                    <img src="./assets/images/songs/mascara.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Mascara</a></h5>
+                    <small>Vijay Antony, <br> Supriya Joshi</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <input type="checkbox" id="playPauseToggle" class="play-pause-toggle">
+                    <audio id="audioPlayer" src="./assets/music/Ordinary-Person-MassTamilan.dev.mp3"></audio>
+                    <img src="./assets/images/songs/teraghata.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Tera Ghata</a></h5>
+                    <small>Gajendra Verma</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended for today End -->
+
+    <!-- Suggested Artist -->
+    <section id="recently-played">
+        <div class="player-title">
+            <h2 class="box-heading">Suggested artist</h2>
+            <P><a href="preview.html">Show all</a></P>
+        </div>
+        <div class="recommended-container">
+            <div class="welcome-column artist">
+                <div class="artist-card">
+                    <img src="./assets/images/artist/mcnandh.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <h5><a href="preview.html">Mc Nandh</a></h5>
+                    <small>Artist</small>
+                </div>
+            </div>
+            <div class="welcome-column artist">
+                <div class="artist-card">
+                    <img src="./assets/images/artist/gvprakash.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <h5><a href="preview.html">GV Prakash</a></h5>
+                    <small>Artist</small>
+                </div>
+            </div>
+            <div class="welcome-column artist">
+                <div class="artist-card">
+                    <img src="./assets/images/artist/mcsai.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <h5><a href="preview.html">Mc Sai</a></h5>
+                    <small>Artist</small>
+                </div>
+            </div>
+            <div class="welcome-column artist">
+                <div class="artist-card">
+                    <img src="./assets/images/artist/eminem.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <h5><a href="preview.html">Eminem</a></h5>
+                    <small>Artist</small>
+                </div>
+            </div>
+            <div class="welcome-column artist">
+                <div class="artist-card">
+                    <img src="./assets/images/artist/adksrirascol.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <h5><a href="preview.html">ADK Srirascol</a></h5>
+                    <small>Artist</small>
+                </div>
+            </div>
+            <div class="welcome-column artist">
+                <div class="artist-card">
+                    <img src="./assets/images/artist/arrahman.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <h5><a href="preview.html">A.R. Rahman</a></h5>
+                    <small>Artist</small>
+                </div>
+            </div>
+            <div class="welcome-column artist">
+                <div class="artist-card">
+                    <img src="./assets/images/artist/yogib.jpg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <h5><a href="preview.html">Yogi B</a></h5>
+                    <small>Artist</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Suggested Artis End -->
+
+    <!-- Today's biggest hits -->
+    <section id="recently-played">
+        <div class="player-title">
+            <h2 class="box-heading">Today's biggest hits</h2>
+            <P><a href="preview.html">Show all</a></P>
+        </div>
+        <div class=" recommended-container">
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/hothits.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Hot Hits Tamil</a></h5>
+                    <small class="sub">Tune into the hot tracks<br> of Kollywood</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/kollywoodrap.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Kollywood Rap</a></h5>
+                    <small class="sub">by Musify</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/malyalamrap.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Mollywood Rap</a></h5>
+                    <small class="sub">by Musify</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/rahmanruling.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Rahman Ruling</a></h5>
+                    <small class="sub">by Musify</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/tamil inde.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Tamil Inde</a></h5>
+                    <small class="sub">by Musify</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/u1drung.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">U1 Drug</a></h5>
+                    <small class="sub">by Mc Nandh</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/workout.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Workout Mania</a></h5>
+                    <small class="sub">by Mc Nandh</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Today's biggest hits End -->
+
+    <!-- Fresh New Music -->
+    <section id="recently-played">
+        <div class="player-title">
+            <h2 class="box-heading">Fresh new music</h2>
+            <P><a href="preview.html">Show all</a></P>
+        </div>
+        <div class=" recommended-container">
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/latesttamil.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Latest Tamil</a></h5>
+                    <small class="sub">Dive into the latest tracks of Kollywood</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/latestmalaylam.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Latest Malayalam</a></h5>
+                    <small class="sub">Tune up with latest Malayalam tracks</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/latesttelugu.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Latest Telugu</a></h5>
+                    <small class="sub">Try Latest Telugu hits <br> with Musify</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/i-popsuperhits.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">I-Pop Superhits</a></h5>
+                    <small class="sub">Biggest hits from your favourite pop stars</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/latestkannada.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Latest Kannada</a></h5>
+                    <small class="sub">Check out the latest hits from Sandalwood!
+                    </small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/newmusicfriday.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">New Music Friday</a></h5>
+                    <small class="sub">The very best in new music from worldwide.</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/playlists/newindance.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">New in Dance</a></h5>
+                    <small class="sub">Latest floor fillers to kickstart your party</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fresh New Music End -->
+
+    <!-- Podcasts -->
+    <section id="recently-played">
+        <div class="player-title">
+            <h2 class="box-heading">Musify original & exclusive shows</h2>
+            <P><a href="preview.html">Show all</a></P>
+        </div>
+        <div class=" recommended-container">
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/podcasts/becoming beast.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Becoming Beast</a></h5>
+                    <small class="sub">Jeff Logan</small>
+
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/podcasts/nalnamurukku.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Naallanaa Murukku</a></h5>
+                    <small class="sub">By RJ Balaji</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/podcasts/forbilliondollarsandmore.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">For Billion Dollars</a></h5>
+                    <small class="sub">Ramakrishnan M</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/podcasts/tate'sworkharder.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Tate's workharder</a></h5>
+                    <small class="sub">Andrew Tate</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/podcasts/topg.jpg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Top G</a></h5>
+                    <small class="sub">Tate Brothers
+                    </small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/podcasts/woice.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Woice</a></h5>
+                    <small class="sub">Ankur Warikoo</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/podcasts/ennenasolranparunga.jpeg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Ennenna Solranga Parunga</a></h5>
+                    <small class="sub">Gopi Sudhakar</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Podcasts End -->
+
+    <!-- Featured Charts -->
+    <section id="recently-played">
+        <div class="player-title">
+            <h2 class="box-heading">Featured Charts</h2>
+            <P><a href="preview.html">Show all</a></P>
+        </div>
+        <div class=" recommended-container">
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/featuredcharts/region_global.jpg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Global Top</a></h5>
+                    <small class="sub">By Musify</small>
+
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/featuredcharts/region_in_default.jpg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">India Top</a></h5>
+                    <small class="sub">By Musify</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/featuredcharts/region_in_default.jpg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Week's Top India</a></h5>
+                    <small class="sub">By Musify</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/featuredcharts/viral50.jpg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Viral 50 India</a></h5>
+                    <small class="sub">By Musify</small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/featuredcharts/viral_india.jpg" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Viral 50 Global</a></h5>
+                    <small class="sub">By Musify
+                    </small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/featuredcharts/weeklytop.webp" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Weekly Top 20</a></h5>
+                    <small class="sub">By Musify<small>
+                </div>
+            </div>
+            <div class="welcome-column">
+                <div class="card">
+                    <img src="./assets/images/featuredcharts/indipop.webp" alt="Image 5">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <h5><a href="preview.html">Indipop 50</a></h5>
+                    <small class="sub">By Musify</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Charts -->
+    <!-- Fixed Play bar -->
+
+    <section id="fixed-playbar">
+        <div class="column track-details">
+            <img id="song-poster" src="./assets/images/recently-played/ordinary person.jpeg" height="80" width="80">
+            <div class="song-info">
+                <h3><a href="preview.html">Ordinary Person (from "Leo")</a><br><span>Anirudh Ravichander, Nikhita
+                        Gandhi</span></h3>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="column">
+            <div id="progress-controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-step-forward"></i>
+                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                    class="Svg-sc-ytk21e-0 kPpCsU">
+                    <path
+                        d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z">
+                    </path>
+                </svg>
+            </div>
+            <div id="progress-bar">
+
+                <span id="audio-controls">
+
+                    <div class="progress-bar">
+                        <span id="start_num">0.55</span>
+                        <input type="range" min="1" max="200" value="90" id="play-bar">
+                        <span id="end_num">2.19</span>
+
+                    </div>
+            </div>
+        </div>
+
+        <div class="column connectivity">
+            <div class="accessibiltiy-section">
+                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                    class="Svg-sc-ytk21e-0 kPpCsU">
+                    <path d="M11.196 8 6 5v6l5.196-3z"></path>
+                    <path
+                        d="M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z">
+                    </path>
+                </svg>
+                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                    class="Svg-sc-ytk21e-0 kPpCsU">
+                    <path
+                        d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z">
+                    </path>
+                </svg>
+                <svg data-encore-id="icon" role="presentation" aria-hidden="true" class="Svg-sc-ytk21e-0 kPpCsU"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25V2.75zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25h-6.5zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5H1.75zM4 15H2v-1.5h2V15z">
+                    </path>
+                    <path d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                </svg>
+                <i class="fa-solid fa-volume-low"></i>
+                <div class="volume-bar">
+                    <span id="volume">
+                        <div id="vol">
+                            <input type="range" min="1" max="20" value="5" id="audio-bar">
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fixed Playbar End -->
+    <!-- Footer -->
+    <footer>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">For the Record</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Communities</h3>
+                <ul>
+                    <li><a href="#">For Artist</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Vendors</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Useful links</h3>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Free Mobile App</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <ul class="social-links">
+                    <li class="social-icons"><a href="https://www.instagram.com/"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li class="social-icons"><a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li class="social-icons"><a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                </ul>
+                <img src="./assets/images/mainlogo-custom.png" class="footer-logo" width="100" alt="site logo">
+            </div>
+        </div>
+
+        <div class="credits-column">
+            <ul class="credits">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
+
+            <p class="copyright">
+                &copy; 2023 Musify
+            </p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+<script src="script.js"></script>
+
+</html>
