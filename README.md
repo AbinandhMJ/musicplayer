@@ -1,2 +1,2 @@
-# musicplayer
-Created with CodeSandbox
+# Musify
+A Music player landing page using pure HTML, CSS with slider animations
